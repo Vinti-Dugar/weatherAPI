@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="search-container">
+        <div class="search">
+          <input
+            id="search-input"
+            type="text"
+            onkeyup="findLocation(event)"
+            placeholder="Enter the city name"
+            autocomplete="off"
+          />
+        </div>
+        <div class="result-box-container" id="rbc">
+          <div id="result-box"></div>
+        </div>
+        <!-- <div id="search-result"></div> -->
+      </div>
+
+      <div class="error">
+        <p>Invalid city name</p>
+      </div>
+      <div class="weather">
+        <span id="weather-icon"></span>
+        <h1 class="temp">22°C</h1>
+        <h2 class="city">Pune</h2>
+        <div class="details">
+          <div class="col">
+            <img src="./images/humidity.png" alt="" />
+            <div>
+              <p class="humidity">50%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="./images/wind.png" alt="" />
+            <div>
+              <p class="wind">50%</p>
+              <p>Wind speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+ 
+</html>
